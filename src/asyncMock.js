@@ -9,7 +9,7 @@ const products = [
     description: "Descripcion de disco",
   },
   {
-    id: "1",
+    id: "2",
     name: "Innuendo",
     price: 10000,
     category: "Album",
@@ -18,7 +18,7 @@ const products = [
     description: "Descripcion de disco",
   },
   {
-    id: "1",
+    id: "3",
     name: "Innuendo",
     price: 10000,
     category: "Album",
@@ -31,6 +31,14 @@ export const getProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(products);
+    }, 500);
+  });
+};
+
+export const getProductsById = (productId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find(prod=>prod.id===productId));
     }, 500);
   });
 };
