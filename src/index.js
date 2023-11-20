@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './src/App.js';
-import reportWebVitals from './src/reportWebVitals.js';
+import App from './src/App';
+import reportWebVitals from './src/reportWebVitals';
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
